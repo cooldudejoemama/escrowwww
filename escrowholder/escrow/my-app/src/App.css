@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #D6E2DE;
+}
+
+.content {
+  padding: 50px;
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.content h3 {
+  font-size: 25px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.content p {
+  font-size: 15px;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.twoway {
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  border: rgb(34, 34, 34) solid 3px;
+}
+
+.oneway {
+  background-color: white;
+  border: rgb(34, 34, 34) solid 3px;
+  margin-top: 100px;
+  padding: 20px;
+  width: 30%;
+  float: right;
+}
+
+.twoway, .oneway {
+  border-color: rgb(50, 50, 50) solid 3px; /* adjust as needed */
+  border-style: solid; /* adjust as needed */
+  box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
+}

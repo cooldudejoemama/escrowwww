@@ -1,0 +1,9 @@
+How It Works
+
+1. Two-Way Escrow: Experience the ultimate in simplicity and efficiency with our Two-Way Escrow service. Designed for seamless, secure digital asset swaps, this method allows both parties to deposit their Ethereum-based tokens into a secure escrow contract. Once both sides have confirmed their satisfaction, the tokens are swiftly and securely swapped, providing an uncomplicated and speedy resolution.
+
+2. One-Way Escrow: Perfect for situations that demand a bit more complexity and precision, our One-Way Escrow service holds the buyer's Ethereum-based tokens within a secure contract until the seller delivers the digital product. Once the buyer receives and approves the product, the held tokens are released into the seller's wallet. This method, though slightly more time-consuming, guarantees a heightened level of security and control for each party involved in the transaction.
+
+
+
+

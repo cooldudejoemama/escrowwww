@@ -1,0 +1,49 @@
+.notification {
+    margin-top: 20px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  
+  .notification .sender {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .notification .sender .sender-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn12 {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn13 {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  

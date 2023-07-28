@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.trade-interface {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.trade-id-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  border: 2px solid #bdc3c7;
+  border-radius: 12px;
+}
+
+.trade-id {
+  font-size: 18px;
+  color: #636e72;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100px;
+  padding: 20px;
+  margin-top: 75px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #222222;
+}
+
+.box:hover {
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+  border: 2px solid #B2BEB5;
+}
+
+.box h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #747d8c;
+  word-break: break-all;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.category-container button {
+  width: 32%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: #ecf0f1;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-container button:hover {
+  background-color: #bdc3c7;
+}
+
+.tokens-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* This creates three equal columns */
+  gap: 20px; /* This is the space between grid items */
+  max-height: 400px;
+  width: 100%;
+  overflow-y: auto;
+  background-color: white;
+  margin-top: 50px;
+}
+
+
+.tokens-container.animate {
+  animation: slideDown 0.5s ease forwards;
+}
+
+.tokens-container.closing {
+  animation: slideUp 0.5s ease forwards;
+}
+
+
+.token-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% / 1) - 20px); /* Subtracting the gap and the margins on left and right */
+  /* Rest of your styles */
+  height: 100%;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+  border: 2px solid #222222;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.token-box:hover,
+.token-box.active {
+  border: 2px solid #B2BEB5;
+  background-color: #bdc3c7;
+}
+
+.token-box h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.token-box p {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  word-break: break-all;
+}
+
+.token-box img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
+.etherlinkoutside {
+  color: black;
+  margin-top: 15px;
+  padding: 2px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.etherlink {
+  color: black;
+  display: inline-block;
+  border: 1px solid #222222;
+  padding: 2px 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.etherlink:hover {
+  color: white;
+  background-color: #222222;
+  border-color: #222222;
+}
+
+
+
+@keyframes slideUp {
+  0% {
+    max-height: 400px;
+  }
+  100% {
+    max-height: 0;
+  }
+}
+
+
+
+@keyframes slideDown {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 400px;  /* Change this to the final height of your boxes */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+}

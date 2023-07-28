@@ -1,0 +1,16 @@
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    font-size: 35px; /* Adjust the size as per your requirement */
+  }
+  
+  
+  @keyframes blink {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+  }
+  
+ 

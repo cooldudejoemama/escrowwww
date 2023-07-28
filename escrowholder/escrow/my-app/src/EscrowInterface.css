@@ -1,0 +1,77 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'IBMPlex';
+  src: local('IBMPlex'), url(C:\Users\treyw\OneDrive\Desktop\escrowholder\escrow\my-app\src\letter\IBMPlexMono-Regular.ttf) format('truetype');
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+  height: calc(100vh - 70px);
+  animation: fadeIn 1.5s ease-in-out 1;
+  font-family: 'IBMPlex';
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.wallets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  justify-items: center;
+}
+
+.container1, .container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1 p, .container2 input {
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.container2 input {
+  /* Set font to monospace to ensure consistent character width */
+  font-family: 'IBMPlex';
+  width: 44ch;
+}
+
+.container3 button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.container3 button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
